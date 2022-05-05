@@ -193,14 +193,34 @@
     
 
             /* -----------------Секция ХЕРО-------------- */
+.overlay{
+    min-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2F303A;
+    background-image: linear-gradient(
+        to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
+}
+
 
 .hero{
     
     padding-top: 200px;
     padding-bottom: 200px;
      text-align: center;
-     background-color: #2F303A;
+     /* background-color: #2F303A; */
+     /* background-image: url(../images/hero-background.jpg); */
+     background-repeat: no-repeat;
+     background-position: center;
+     
         }
+
+
 .hero-title
 {
     margin-top: 0;
@@ -217,7 +237,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--hero-colour);
-    background-color:#2F303A;
+    /* background-color:#2F303A; */
    
 }
 .hero-button
@@ -317,6 +337,29 @@
 .item-text:last-child{
          padding: 0;
          margin: 0%;
+     }
+
+     .adv-button{
+         padding-top: 25px;
+         padding-bottom: 25px;
+         padding-right: auto;
+         padding-left: auto;
+         margin-bottom: 30px;
+
+         background-color: #F5F4FA; ;
+         border-radius: 4px;
+     }
+
+     .adv-button1{
+         display: inline-flex;
+         align-items: center;
+        width: 270px;
+         padding-top: 30px;
+         padding-bottom: 30px;
+         background-color: tomato;
+        color: #FFFFFF;
+        border-radius: 4px;
+
      }
 
             /*------------ чем мы занимаемся------------ */
