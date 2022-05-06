@@ -180,6 +180,7 @@
 
 .nav-contact-link{
         display: flex;
+        align-items: center;
         margin-bottom: 0;
         margin-top: 0;
         padding-top: 0;
@@ -190,7 +191,32 @@
 .nav-contact-link li+li{
         margin-left: 50px;
     }
-    
+    .nav-contact-link.list{
+        display: flex;
+        align-items: center;
+    }
+
+.contact::before{
+    display:inline-block;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    width: 16px;
+    height: 12px;
+
+}    
+.contact.mail::before{
+    margin-right: 10px;
+    background-image: url(../images/envelope.svg);
+}
+
+.contact.tel::before{
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/Vector.svg);
+}
+
 
             /* -----------------Секция ХЕРО-------------- */
 .overlay{
@@ -289,7 +315,6 @@
 
 .advantage-item{
 
-    /* display: inline-block; */
     width: 270px;
     margin-right: 30px;
 }
@@ -339,28 +364,35 @@
          margin: 0%;
      }
 
-     .adv-button{
-         padding-top: 25px;
-         padding-bottom: 25px;
-         padding-right: auto;
-         padding-left: auto;
-         margin-bottom: 30px;
+.advantage-item::before {
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 4px;
 
-         background-color: #F5F4FA; ;
-         border-radius: 4px;
-     }
+}
+    
+.advantage-item.details::before{
+    background-image: url(../images/antenna\ 1.png);
+}
 
-     .adv-button1{
-         display: inline-flex;
-         align-items: center;
-        width: 270px;
-         padding-top: 30px;
-         padding-bottom: 30px;
-         background-color: tomato;
-        color: #FFFFFF;
-        border-radius: 4px;
+.advantage-item.punctuality::before{
+    background-image: url(../images/clock\ 1.png);
+}
 
-     }
+.advantage-item.planning::before{
+    background-image: url(../images/diagram\ 1.png);
+}
+
+.advantage-item.technologies::before{
+    background-image: url(../images/astronaut\ 1.png);
+}
+
+
 
             /*------------ чем мы занимаемся------------ */
 
@@ -477,6 +509,7 @@ padding-bottom: 30px;
 .member-proffesion{   
       margin-top: 0;
       margin-bottom: 0px;
+      padding-bottom: 16px;
       font-weight: 400;
       font-size: 16px;
       line-height: 118%;
@@ -484,6 +517,122 @@ padding-bottom: 30px;
       color: var(--secondary-text-colour);
             }
 
+.soc-pics{
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.soc-pic::before{
+    display: block;
+    content: "";
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 1px solid #AFB1B8; */
+    border-radius: 4px;
+
+    width: 30px;
+    height: 30px;
+    
+}
+
+ 
+.soc-pic.instagram::before{
+    background-image: url(../images/social/instagram\ 2.svg);
+}
+
+.soc-pic.twitter::before{
+    background-image: url(../images/social/twitter.svg);
+}
+
+.soc-pic.facebook::before{
+    background-image: url(../images/social/facebook.svg);
+}
+
+.soc-pic.linkedin::before{
+    margin-right: 0;
+    background-image: url(../images/social/linkedin\ 1.svg);
+}
+
+/* --------------------------- ПОСТОЯННЫЕ КЛИЕНТЫ------------------------- --*/
+
+.usually-clients{
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+}
+
+.clients-title{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 116%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color: 
+    ;
+}
+    
+.clients-list{
+    display: flex;
+   padding: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+    list-style: none;
+}
+
+.clients-list li{
+    margin-right: 30px;
+}
+
+.clients-list li:last-child{
+    margin-right: 0;}
+
+.client::before{
+    display: block;
+    content: "";
+    width: 170px;
+    height: 92px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+
+.client.first::before{
+    
+    background-image: url(../images/clients/Logo1.svg);
+    
+}
+
+.client.second::before{
+    background-image: url(../images/clients/Logo\ 2.svg);
+}
+
+.client.third::before{
+    background-image: url(../images/clients/Logo\ 3.svg);
+}
+
+.client.fourth::before{
+    background-image: url(../images/clients/Logo\ 4.svg);
+}
+
+.client.fifth::before{
+    background-image: url(../images/clients/Logo\ 5.svg);
+}
+
+.client.sixth::before{
+    background-image: url(../images/clients/Logo\ 6.svg);
+}
    /* ---------========-----Портфолио --------========------*/
 
 .portfolio-link{
@@ -603,7 +752,6 @@ border: 1px #EEEEEE;
     
     flex-wrap: wrap;
     list-style: none;
-    /* text-align: center; */
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
@@ -660,6 +808,9 @@ border: 1px #EEEEEE;
     color: var(--backgr-alt-color)
 }
 .footer{
+    /* display: flex; */
+    align-items: center;
+    justify-content: start;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -668,7 +819,7 @@ border: 1px #EEEEEE;
     text-decoration: none;
 }
 .footer-links
-   {
+   {margin-right: 70px;
 
    }
 .adress
@@ -698,3 +849,55 @@ border: 1px #EEEEEE;
      
  }
 
+ .footer-soc-links h2{
+     color: white;
+     font-size: 14px;
+     line-height: 16px;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+}
+
+.footer-social{
+
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    width: 300px;
+    /* background-color:tomato; */
+}
+
+.soc-footer::before{
+    content: "";
+    margin-right: 10px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+    border-radius: 50%;
+    
+  
+
+}
+
+.soc-footer.instagram::before{
+    background-image: url(../images/social/instagram\ 2.svg);
+}
+
+.soc-footer.twitter::before{
+    background-image: url(../images/social/twitter.svg);
+}
+
+.soc-footer.facebook::before{
+    background-image: url(../images/social/facebook.svg);
+}
+
+.soc-footer.linkedin::before{
+    background-image: url(../images/social/linkedin\ 1.svg);
+}
+
+.foter-elements{
+    display: flex;
+}
