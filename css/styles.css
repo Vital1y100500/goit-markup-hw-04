@@ -220,7 +220,7 @@
 
             /* -----------------Секция ХЕРО-------------- */
 .overlay{
-    min-width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -443,7 +443,7 @@ h2 .whatwedo-section{
 .whatwedo-item img{
     display: block;
 }
-            /*---------------- наша команда ----------------*/
+      /*--------------------- НАША КОМАНДА----- ----------------*/
 
  .team-list{
       display: flex;
@@ -469,7 +469,6 @@ h2 .whatwedo-section{
     display: block;
     text-align: center;
     margin-right: 30px;
-    /* margin-bottom: 94px; */
     background-color:white;
 }
 .team-person-card img{
@@ -508,8 +507,8 @@ padding-bottom: 30px;
 
 .member-proffesion{   
       margin-top: 0;
-      margin-bottom: 0px;
-      padding-bottom: 16px;
+      margin-bottom: 16px;
+
       font-weight: 400;
       font-size: 16px;
       line-height: 118%;
@@ -526,22 +525,29 @@ padding-bottom: 30px;
 
 }
 
-.soc-pic::before{
+.sp-button-icon{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+
+/* .soc-pic::before{
     display: block;
     content: "";
     margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center;
     /* border: 1px solid #AFB1B8; */
-    border-radius: 4px;
+    /* border-radius: 4px;
 
     width: 30px;
     height: 30px;
     
-}
+/* } */ */ */
 
  
-.soc-pic.instagram::before{
+/* .soc-pic.instagram::before{
     background-image: url(../images/social/instagram\ 2.svg);
 }
 
@@ -556,7 +562,7 @@ padding-bottom: 30px;
 .soc-pic.linkedin::before{
     margin-right: 0;
     background-image: url(../images/social/linkedin\ 1.svg);
-}
+} */
 
 /* --------------------------- ПОСТОЯННЫЕ КЛИЕНТЫ------------------------- --*/
 
@@ -633,7 +639,10 @@ padding-bottom: 30px;
 .client.sixth::before{
     background-image: url(../images/clients/Logo\ 6.svg);
 }
+
+
    /* ---------========-----Портфолио --------========------*/
+
 
 .portfolio-link{
 border: 1px #EEEEEE;
@@ -653,7 +662,6 @@ border: 1px #EEEEEE;
     text-decoration: none;
     align-items: center;
     margin-left: 8px;
-    /* color: tomato; */
  
 }
 
@@ -688,9 +696,6 @@ border: 1px #EEEEEE;
   {background-color: var(--accent-colourbackground) ;
       color:var(--hero-colour);
   }
-.portfolio-buttons-list li{
-    
-}
 
 .uniqe-case
 {
@@ -710,7 +715,6 @@ border: 1px #EEEEEE;
     margin-bottom: 0;
 }
 .item a{
-    /* display: inline-block; */
     width: 0px;
     height: 0px;
 }
@@ -780,9 +784,9 @@ border: 1px #EEEEEE;
 .portfolio-cards li{
     width: 370px;
     margin-right: 30px;
-
-
 }
+
+
  /*-====================-=-=-= футер-====================-=-=-= */
 
 
