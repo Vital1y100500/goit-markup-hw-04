@@ -507,7 +507,7 @@ padding-bottom: 30px;
 
 .member-proffesion{   
       margin-top: 0;
-      margin-bottom: 16px;
+      /* margin-bottom: 16px; */
 
       font-weight: 400;
       font-size: 16px;
@@ -518,6 +518,9 @@ padding-bottom: 30px;
 
 .soc-pics{
     padding-left: 0;
+padding: 0;
+margin: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,46 +528,43 @@ padding-bottom: 30px;
 
 }
 
+.soc-pic{
+   
+}
+
+.sp-button{
+    height: 44px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+    margin: 0;
+    width: 44px;
+    grid-template: 44px;
+
+}
+.sp-button:hover{
+   fill: white;
+    background-color: #2196F3;
+}
+
+.sp-button:last-child{
+    margin-right: 0;
+}
+
 .sp-button-icon{
-    width: 100px;
-    height: 100px;
+    padding: 0;
+
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
 
-/* .soc-pic::before{
-    display: block;
-    content: "";
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* border: 1px solid #AFB1B8; */
-    /* border-radius: 4px;
-
-    width: 30px;
-    height: 30px;
-    
-/* } */ */ */
-
- 
-/* .soc-pic.instagram::before{
-    background-image: url(../images/social/instagram\ 2.svg);
-}
-
-.soc-pic.twitter::before{
-    background-image: url(../images/social/twitter.svg);
-}
-
-.soc-pic.facebook::before{
-    background-image: url(../images/social/facebook.svg);
-}
-
-.soc-pic.linkedin::before{
-    margin-right: 0;
-    background-image: url(../images/social/linkedin\ 1.svg);
-} */
 
 /* --------------------------- ПОСТОЯННЫЕ КЛИЕНТЫ------------------------- --*/
+
 
 .usually-clients{
     padding-bottom: 94px;
@@ -582,8 +582,7 @@ padding-bottom: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    background-color: 
-    ;
+    /* background-color: teal; */
 }
     
 .clients-list{
