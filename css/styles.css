@@ -186,8 +186,21 @@
   display: flex;
   align-items: center;
 }
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 10px; */
+}
+.contact-icon{
 
-.contact::before {
+}
+.contact-pic{
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+/* .contact::before {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -204,7 +217,7 @@
   height: 16px;
   margin-right: 10px;
   background-image: url(../images/Vector.svg);
-}
+} */
 
 /* ---------------------Секция ХЕРО------------------ */
 .overlay {
