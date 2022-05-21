@@ -371,19 +371,19 @@
 }
 
 .advantage-item.details::before {
-  background-image: url(../images/antenna\ 1.png);
+  background-image: url(../images/antenna\ 1.svg);
 }
 
 .advantage-item.punctuality::before {
-  background-image: url(../images/clock\ 1.png);
+  background-image: url(../images/clock\ 1.svg);
 }
 
 .advantage-item.planning::before {
-  background-image: url(../images/diagram\ 1.png);
+  background-image: url(../images/diagram\ 1.svg);
 }
 
 .advantage-item.technologies::before {
-  background-image: url(../images/astronaut\ 1.png);
+  background-image: url(../images/astronaut\ 1.svg);
 }
 
 /*--------------------- чем мы занимаемся--------------------- */
@@ -506,10 +506,19 @@ h2 .whatwedo-section {
   color: var(--secondary-text-colour);
 }
 
+.soc-pic{
+  margin-right: 10px;
+}
+
+.soc-pic:last-child{
+  margin-right: 0px;
+}
+
 .soc-pics {
   padding-left: 0;
   padding: 0;
   margin: 0;
+  margin-right: 10px;
 
   display: flex;
   align-items: center;
@@ -534,8 +543,14 @@ h2 .whatwedo-section {
 .sp-button:hover {
   background-color: var(--accent-colourbackground);
 }
+.sp-button:focus {
+  background-color: var(--accent-colourbackground);
+}
 
 .sp-button:hover .sp-button-icon {
+  fill: white;
+}
+.sp-button:focus .sp-button-icon {
   fill: white;
 }
 
@@ -626,9 +641,7 @@ h2 .whatwedo-section {
 
 /* ---------========-----Портфолио --------========------*/
 
-.portfolio-link {
-  border: 1px #eeeeee;
-}
+
 .portfolio-list {
   display: flex;
   justify-content: center;
@@ -687,20 +700,19 @@ h2 .whatwedo-section {
 
 .portfolio-link {
   text-decoration: none;
+  display: block;
+  border: 1px #eeeeee;
   margin-top: 0;
   margin-bottom: 0;
 }
-.item a {
-  width: 0px;
-  height: 0px;
-}
+
 
 .portfolio-text {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
-
+  margin-top: -4px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -723,11 +735,11 @@ h2 .whatwedo-section {
   margin-bottom: 30px;
 }
 
-.portfolio-cards .item:hover {
+.portfolio-cards .portfolio-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-cards .item:focus {
+.portfolio-cards .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -753,7 +765,11 @@ h2 .whatwedo-section {
   width: 25px; */
 }
 .client-image {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border-radius: 4px;
+  border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
 }
@@ -771,10 +787,9 @@ h2 .whatwedo-section {
 }
 
 .client-pic {
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  width: 170px;
-  height: 92px;
+
+  width: 106px;
+  height: 60px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 16px;
@@ -790,6 +805,7 @@ h2 .whatwedo-section {
 }
 */ .port-img {
   display: block;
+  
 }
 
 .portfolio-cards :nth-child(3n) {
